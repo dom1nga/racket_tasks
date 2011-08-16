@@ -1,10 +1,10 @@
 #lang racket
 (define (sum-squares-of-biggest-nums a b c)
-  (cond ((and (< a b) (< a c)) 
+  (cond ((and (< a b) (< a c))
          (+ (* b b) (* c c)))
-        ((and (< b a) (< b c)) 
+        ((and (< b a) (< b c))
          (+ (* a a) (* c c)))
-        ((and (< c b) (< c a)) 
+        ((and (< c b) (< c a))
          (+ (* b b) (* a a)))
         )
   )
